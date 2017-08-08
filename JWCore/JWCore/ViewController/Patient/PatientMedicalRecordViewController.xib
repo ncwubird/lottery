@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PatientMedicalRecordViewController">
+            <connections>
+                <outlet property="medicalTable" destination="oT0-2C-2HY" id="mK1-Td-qo8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-2C-2HY" customClass="JWTableView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZRP-Tb-Ubw"/>
+                        <outlet property="delegate" destination="-1" id="J5N-gj-TLj"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oT0-2C-2HY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6EU-5N-Qzd"/>
+                <constraint firstAttribute="bottom" secondItem="oT0-2C-2HY" secondAttribute="bottom" id="9ZS-Yc-9IY"/>
+                <constraint firstAttribute="trailing" secondItem="oT0-2C-2HY" secondAttribute="trailing" id="rf7-qR-Rk7"/>
+                <constraint firstItem="oT0-2C-2HY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zat-C7-mxC"/>
+            </constraints>
+            <point key="canvasLocation" x="-217" y="-83"/>
+        </view>
+    </objects>
+</document>

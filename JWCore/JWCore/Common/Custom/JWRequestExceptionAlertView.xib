@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="62Z-ZD-seR" customClass="JWRequestExceptionAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="网络出错啦，请点击按钮重新加载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNh-nJ-FWk">
+                    <frame key="frameInset" minX="8" minY="275" width="304" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sop-SU-hIH">
+                    <frame key="frameInset" minX="105" minY="322" width="110" height="35"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="J9e-ov-zYX"/>
+                        <constraint firstAttribute="width" constant="110" id="wh1-M7-Jw9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="重新加载">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="reloadAction:" destination="62Z-ZD-seR" eventType="touchUpInside" id="Sea-Tg-RVe"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="error_request" translatesAutoresizingMaskIntoConstraints="NO" id="hNv-VE-laX">
+                    <frame key="frameInset" minX="90" minY="131" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="JCd-i1-5m8"/>
+                        <constraint firstAttribute="width" constant="140" id="LKK-x0-pcf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZNh-nJ-FWk" firstAttribute="top" secondItem="hNv-VE-laX" secondAttribute="bottom" constant="4" id="B6C-yQ-bjn"/>
+                <constraint firstItem="ZNh-nJ-FWk" firstAttribute="leading" secondItem="62Z-ZD-seR" secondAttribute="leading" constant="8" id="GZ8-ih-2Pq"/>
+                <constraint firstAttribute="trailing" secondItem="ZNh-nJ-FWk" secondAttribute="trailing" constant="8" id="Gqv-tg-RW5"/>
+                <constraint firstItem="hNv-VE-laX" firstAttribute="centerX" secondItem="62Z-ZD-seR" secondAttribute="centerX" id="cJY-sX-U9I"/>
+                <constraint firstItem="ZNh-nJ-FWk" firstAttribute="centerY" secondItem="62Z-ZD-seR" secondAttribute="centerY" id="g2c-WH-bbu"/>
+                <constraint firstItem="sop-SU-hIH" firstAttribute="centerX" secondItem="62Z-ZD-seR" secondAttribute="centerX" id="mlX-LG-eA7"/>
+                <constraint firstItem="sop-SU-hIH" firstAttribute="top" secondItem="ZNh-nJ-FWk" secondAttribute="bottom" constant="30" id="yy8-4l-orP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="85" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="error_request" width="163" height="162"/>
+    </resources>
+</document>
