@@ -17,16 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //645984134684+95465434658413
-    ///23132123132132123123
-
-    
-    //645984134684+95465434658413
-    ///23132123132132123123
-    
-    //645984134684+95465434658413
-    ///23132123132132123123
-
 }
 
 
