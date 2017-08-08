@@ -8,10 +8,11 @@
 
 #import "JWHTTPRequest.h"
 #import <AFHTTPSessionManager.h>
+#import "JWProgressView.h"
 
 __strong static JWHTTPRequest *request = nil;
-
 static ARGS_TYPE platFormStore=ARGS_SLANT;
+static AFHTTPSessionManager *manager;
 
 @interface JWHTTPRequest()
 
@@ -21,6 +22,16 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
 
 @implementation JWHTTPRequest
 
+
++(AFHTTPSessionManager *)sharedHttpSessionManager {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        manager = [AFHTTPSessionManager manager];
+        //manager.requestSerializer.timeoutInterval = 10.0;
+    });
+    
+    return manager;
+}
 
 /**
  *  监测网络的可链接性
@@ -106,7 +117,7 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
 /**
  *  创建JWHTTPRequest单例
  */
-+(JWHTTPRequest *)sharedInstance
++ (JWHTTPRequest *)sharedInstance
 {
     
     if (!request) {
@@ -122,11 +133,13 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
  *POST请求
  */
 
-+ (void)post:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error{
-    [JWHTTPRequest post:api args:args target:target succ:succ error:error inv:nil];
++ (void)post:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error {
+    
+    [JWHTTPRequest post:api args:args target:target succ:succ error:error loading:YES];
 }
 
-+ (void)post:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error inv:(UIView *)view{
+
++ (void)post:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error loading:(BOOL)loading{
     
     [JWHTTPRequest sharedInstance];
     
@@ -140,12 +153,17 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
     [request logRequest:api args:args type:@"post"];
     
     [request.httpSessionManager POST:api parameters:args progress:^(NSProgress * _Nonnull uploadProgress) {
-        
+        if (loading) {
+            [JWProgressView show];
+        }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [JWProgressView dismiss];
         NSString *responseString = [[NSString alloc] initWithData:responseObject  encoding:NSUTF8StringEncoding];
         if(responseObject) succ(responseString);
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull err) {
         error(err);
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
     
 }
@@ -155,10 +173,11 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
  */
 
 + (void)get:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error{
-    [JWHTTPRequest get:api args:args target:target succ:succ error:error inv:nil];
+    
+    [JWHTTPRequest get:api args:args target:target succ:succ error:error loading:YES];
 }
 
-+ (void)get:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error inv:(UIView *)view{
++ (void)get:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error loading:(BOOL)loading{
     
     [JWHTTPRequest sharedInstance];
     
@@ -231,12 +250,17 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
     [request logRequest:api args:args type:@"get"];
     
     [request.httpSessionManager GET:api parameters:args progress:^(NSProgress * _Nonnull downloadProgress) {
-        
+        if (loading) {
+            [JWProgressView show];
+        }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
         NSString *responseString = [[NSString alloc] initWithData:responseObject  encoding:NSUTF8StringEncoding];
         if(responseObject) succ(responseString);
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull err) {
         error(err);
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
 }
 
@@ -266,7 +290,7 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
 + (void)postNoShareInstance:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error{
     
     JWHTTPRequest * httpRequest=[[JWHTTPRequest alloc] init];
-    httpRequest.httpSessionManager=[AFHTTPSessionManager manager];
+    httpRequest.httpSessionManager=[self sharedHttpSessionManager];
     httpRequest.httpSessionManager.requestSerializer=[AFHTTPRequestSerializer serializer];
     httpRequest.httpSessionManager.responseSerializer=[AFHTTPResponseSerializer serializer];
     
@@ -284,8 +308,10 @@ static ARGS_TYPE platFormStore=ARGS_SLANT;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSString *responseString = [[NSString alloc] initWithData:responseObject  encoding:NSUTF8StringEncoding];
         if(responseObject) succ(responseString);
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull err) {
         error(err);
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
     
 }

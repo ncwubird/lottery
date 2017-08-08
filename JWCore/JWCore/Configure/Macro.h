@@ -13,11 +13,6 @@
 #define KSCREEN_WIDTH           [[UIScreen mainScreen] bounds].size.width
 #define KSCREEN_HEIGHT          [[UIScreen mainScreen] bounds].size.height
 
-//定义返回请求数据的block类型
-typedef void (^ReturnValueBlock) (id returnValue);
-typedef void (^ErrorCodeBlock) (id errorCode);
-typedef void (^FailureBlock)();
-typedef void (^NetWorkBlock)(BOOL netConnetState);
 
 #define FSLog(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define Fmt(fmt,...)        ([NSString stringWithFormat:fmt,##__VA_ARGS__])

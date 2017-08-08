@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0426A55C1D795992000DBAF4 /* RootTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426A55B1D795992000DBAF4 /* RootTabbarViewController.m */; };
-		0426A5E71D795B16000DBAF4 /* SPResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426A5E61D795B16000DBAF4 /* SPResponseModel.m */; };
 		0426A6131D796CEC000DBAF4 /* UINavigationController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426A6121D796CEC000DBAF4 /* UINavigationController+NavigationBar.m */; };
 		043165641D80074B00373D7E /* UITableViewCell+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043165631D80074B00373D7E /* UITableViewCell+Animation.m */; };
 		0432C9451D7D550B00184E14 /* YHWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0432C9391D7D550B00184E14 /* YHWebViewProgress.m */; };
 		0432C9461D7D550B00184E14 /* YHWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0432C93B1D7D550B00184E14 /* YHWebViewProgressView.m */; };
-		0432C94B1D7D567900184E14 /* newgotbc.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0432C94A1D7D567900184E14 /* newgotbc.ttf */; };
 		043A87B11D868A120050FF2F /* JWDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A87AE1D868A120050FF2F /* JWDatePicker.m */; };
 		043A87B21D868A120050FF2F /* JWPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A87B01D868A120050FF2F /* JWPickerView.m */; };
 		043A87B51D868C570050FF2F /* JWSummitFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A87B41D868C570050FF2F /* JWSummitFile.m */; };
@@ -52,7 +50,6 @@
 		04AAE7381CFD975B0086CD98 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AAE7371CFD975B0086CD98 /* ImageIO.framework */; };
 		04B86D7B1D7FA72B00FAEF35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B86D7A1D7FA72B00FAEF35 /* QuartzCore.framework */; };
 		04CCA4C51D7EB9450033730D /* UINavigationItem+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CCA4C41D7EB9450033730D /* UINavigationItem+Margin.m */; };
-		04DCA6621CFEB1DF0017EDBC /* JWHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA65F1CFEB1DF0017EDBC /* JWHTTPRequest.m */; };
 		04DCA6631CFEB1DF0017EDBC /* JWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA6611CFEB1DF0017EDBC /* JWProgressView.m */; };
 		04DCA6661CFEB61D0017EDBC /* JWImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA6651CFEB61D0017EDBC /* JWImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04DCA6771CFEB7E10017EDBC /* JWTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA66E1CFEB7E00017EDBC /* JWTableView.m */; };
@@ -92,7 +89,9 @@
 		FE5824DB1DB4B2F3008052C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE5824DA1DB4B2F3008052C9 /* Localizable.strings */; };
 		FE5824DE1DB4CF71008052C9 /* ClickImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5824DD1DB4CF71008052C9 /* ClickImage.m */; };
 		FE9D44991DB8B39B009EFDAA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		FEA355E51D9D0BAB00CC25E9 /* SPFirstResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA355E41D9D0BAB00CC25E9 /* SPFirstResponseModel.m */; };
+		FEB14ABA1F399CAD00434021 /* JWHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */; };
+		FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABC1F399CC500434021 /* JWResponseModel.m */; };
+		FEB14AC01F399DFF00434021 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABF1F399DFF00434021 /* ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,8 +108,6 @@
 		0239D36912F71696041F8C9D /* Pods-JWCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWCore/Pods-JWCore.debug.xcconfig"; sourceTree = "<group>"; };
 		0426A55A1D795992000DBAF4 /* RootTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabbarViewController.h; sourceTree = "<group>"; };
 		0426A55B1D795992000DBAF4 /* RootTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabbarViewController.m; sourceTree = "<group>"; };
-		0426A5E51D795B16000DBAF4 /* SPResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPResponseModel.h; sourceTree = "<group>"; };
-		0426A5E61D795B16000DBAF4 /* SPResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPResponseModel.m; sourceTree = "<group>"; };
 		0426A6111D796CEC000DBAF4 /* UINavigationController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NavigationBar.h"; sourceTree = "<group>"; };
 		0426A6121D796CEC000DBAF4 /* UINavigationController+NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavigationBar.m"; sourceTree = "<group>"; };
 		043165621D80074B00373D7E /* UITableViewCell+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Animation.h"; sourceTree = "<group>"; };
@@ -121,7 +118,6 @@
 		0432C93A1D7D550B00184E14 /* YHWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWebViewProgressView.h; sourceTree = "<group>"; };
 		0432C93B1D7D550B00184E14 /* YHWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWebViewProgressView.m; sourceTree = "<group>"; };
 		0432C93C1D7D550B00184E14 /* YHWebViewProgressViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWebViewProgressViewProtocol.h; sourceTree = "<group>"; };
-		0432C94A1D7D567900184E14 /* newgotbc.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = newgotbc.ttf; sourceTree = "<group>"; };
 		043A87AD1D868A120050FF2F /* JWDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWDatePicker.h; sourceTree = "<group>"; };
 		043A87AE1D868A120050FF2F /* JWDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDatePicker.m; sourceTree = "<group>"; };
 		043A87AF1D868A120050FF2F /* JWPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWPickerView.h; sourceTree = "<group>"; };
@@ -189,8 +185,6 @@
 		04B86D7A1D7FA72B00FAEF35 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04CCA4C31D7EB9450033730D /* UINavigationItem+Margin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Margin.h"; sourceTree = "<group>"; };
 		04CCA4C41D7EB9450033730D /* UINavigationItem+Margin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Margin.m"; sourceTree = "<group>"; };
-		04DCA65E1CFEB1DF0017EDBC /* JWHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWHTTPRequest.h; sourceTree = "<group>"; };
-		04DCA65F1CFEB1DF0017EDBC /* JWHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWHTTPRequest.m; sourceTree = "<group>"; };
 		04DCA6601CFEB1DF0017EDBC /* JWProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWProgressView.h; sourceTree = "<group>"; };
 		04DCA6611CFEB1DF0017EDBC /* JWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWProgressView.m; sourceTree = "<group>"; };
 		04DCA6641CFEB61D0017EDBC /* JWImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWImageLoadConnection.h; sourceTree = "<group>"; };
@@ -255,8 +249,12 @@
 		FE5824DC1DB4CF71008052C9 /* ClickImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickImage.h; sourceTree = "<group>"; };
 		FE5824DD1DB4CF71008052C9 /* ClickImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickImage.m; sourceTree = "<group>"; };
 		FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		FEA355E31D9D0BAB00CC25E9 /* SPFirstResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFirstResponseModel.h; sourceTree = "<group>"; };
-		FEA355E41D9D0BAB00CC25E9 /* SPFirstResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFirstResponseModel.m; sourceTree = "<group>"; };
+		FEB14AB81F399CAD00434021 /* JWHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWHTTPRequest.h; sourceTree = "<group>"; };
+		FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWHTTPRequest.m; sourceTree = "<group>"; };
+		FEB14ABB1F399CC500434021 /* JWResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWResponseModel.h; sourceTree = "<group>"; };
+		FEB14ABC1F399CC500434021 /* JWResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWResponseModel.m; sourceTree = "<group>"; };
+		FEB14ABE1F399DFF00434021 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		FEB14ABF1F399DFF00434021 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,10 +312,6 @@
 			isa = PBXGroup;
 			children = (
 				048EE0581D8287D400AE18B5 /* user */,
-				0426A5E51D795B16000DBAF4 /* SPResponseModel.h */,
-				0426A5E61D795B16000DBAF4 /* SPResponseModel.m */,
-				FEA355E31D9D0BAB00CC25E9 /* SPFirstResponseModel.h */,
-				FEA355E41D9D0BAB00CC25E9 /* SPFirstResponseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,6 +378,10 @@
 			isa = PBXGroup;
 			children = (
 				0432C9111D7D4DEB00184E14 /* RequestAddress.h */,
+				FEB14ABB1F399CC500434021 /* JWResponseModel.h */,
+				FEB14ABC1F399CC500434021 /* JWResponseModel.m */,
+				FEB14ABE1F399DFF00434021 /* ViewModel.h */,
+				FEB14ABF1F399DFF00434021 /* ViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -428,8 +426,8 @@
 		043F26231CFC1215000A294B /* PodsAgent */ = {
 			isa = PBXGroup;
 			children = (
-				04DCA65E1CFEB1DF0017EDBC /* JWHTTPRequest.h */,
-				04DCA65F1CFEB1DF0017EDBC /* JWHTTPRequest.m */,
+				FEB14AB81F399CAD00434021 /* JWHTTPRequest.h */,
+				FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */,
 				04DCA6601CFEB1DF0017EDBC /* JWProgressView.h */,
 				04DCA6611CFEB1DF0017EDBC /* JWProgressView.m */,
 				0457BB7C1CFD734C00FEBBC5 /* JWShare.h */,
@@ -530,7 +528,6 @@
 			isa = PBXGroup;
 			children = (
 				FE577A7B1DBA0D80006E064A /* JWCore.entitlements */,
-				0432C94A1D7D567900184E14 /* newgotbc.ttf */,
 				043F25FD1CFC1009000A294B /* Configure */,
 				0432C9331D7D54F200184E14 /* Tool */,
 				043F25FB1CFC0FDB000A294B /* Common */,
@@ -739,7 +736,6 @@
 				04E735671CFC0AC0007F51C4 /* Assets.xcassets in Resources */,
 				FE5824DB1DB4B2F3008052C9 /* Localizable.strings in Resources */,
 				04E735651CFC0AC0007F51C4 /* Main.storyboard in Resources */,
-				0432C94B1D7D567900184E14 /* newgotbc.ttf in Resources */,
 				FE4830DC1DACC4FD001ABB17 /* city.json in Resources */,
 				04FEF99B1D879327004C4520 /* WebViewController.xib in Resources */,
 				044768EC1D87DDF700BCDA27 /* JWRequestExceptionAlertView.xib in Resources */,
@@ -827,6 +823,7 @@
 				0426A55C1D795992000DBAF4 /* RootTabbarViewController.m in Sources */,
 				0432C9461D7D550B00184E14 /* YHWebViewProgressView.m in Sources */,
 				04E7355F1CFC0AC0007F51C4 /* AppDelegate.m in Sources */,
+				FEB14ABA1F399CAD00434021 /* JWHTTPRequest.m in Sources */,
 				04DCA6661CFEB61D0017EDBC /* JWImageLoadConnection.m in Sources */,
 				04FC0BA21D8FC39B00A8BC47 /* UIView+DHSmartScreenshot.m in Sources */,
 				04FC0BA01D8FC39B00A8BC47 /* UIScrollView+DHSmartScreenshot.m in Sources */,
@@ -834,7 +831,6 @@
 				04FEF99A1D879327004C4520 /* WebViewController.m in Sources */,
 				0457BB7E1CFD734C00FEBBC5 /* JWShare.m in Sources */,
 				043165641D80074B00373D7E /* UITableViewCell+Animation.m in Sources */,
-				FEA355E51D9D0BAB00CC25E9 /* SPFirstResponseModel.m in Sources */,
 				044768EA1D87DDCF00BCDA27 /* JWRequestExceptionAlertView.m in Sources */,
 				046298C91CFC174A006050EB /* SysParams.m in Sources */,
 				04E5D11A1D000B6C00DB97CB /* UITableView+EmptyData.m in Sources */,
@@ -843,7 +839,6 @@
 				046298D91CFC2C32006050EB /* UserInfoManager.m in Sources */,
 				044768F41D87F7F400BCDA27 /* RootNavigationViewController.m in Sources */,
 				04E7355C1CFC0AC0007F51C4 /* main.m in Sources */,
-				0426A5E71D795B16000DBAF4 /* SPResponseModel.m in Sources */,
 				043F261F1CFC1104000A294B /* UIView+Extra.m in Sources */,
 				048EE0611D82B8DC00AE18B5 /* JWImagePicker.m in Sources */,
 				04FC0B9F1D8FC39B00A8BC47 /* UIImage+DHImageAdditions.m in Sources */,
@@ -852,9 +847,9 @@
 				04CCA4C51D7EB9450033730D /* UINavigationItem+Margin.m in Sources */,
 				043F261B1CFC1104000A294B /* NSString+Extra.m in Sources */,
 				0432C9451D7D550B00184E14 /* YHWebViewProgress.m in Sources */,
-				04DCA6621CFEB1DF0017EDBC /* JWHTTPRequest.m in Sources */,
 				046298D61CFC2666006050EB /* NSObject+Extra.m in Sources */,
 				043F261E1CFC1104000A294B /* UITextField+Extra.m in Sources */,
+				FEB14AC01F399DFF00434021 /* ViewModel.m in Sources */,
 				FE5824DE1DB4CF71008052C9 /* ClickImage.m in Sources */,
 				04FEF99E1D87A9D7004C4520 /* ImagePlayerView.m in Sources */,
 				043F26181CFC1104000A294B /* NSDate+Extra.m in Sources */,
@@ -862,6 +857,7 @@
 				043A87B21D868A120050FF2F /* JWPickerView.m in Sources */,
 				04DCA6631CFEB1DF0017EDBC /* JWProgressView.m in Sources */,
 				04DCA6791CFEB7E10017EDBC /* MJCustomGifHeader.m in Sources */,
+				FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

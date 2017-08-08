@@ -36,17 +36,8 @@
     // Do any additional setup after loading the view.
    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showReloginAlert) name:KUSER_LOGIN_INVALID object:nil];
-//    
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupUntreatedApplyCount) name:@"setupUntreatedApplyCount" object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupUnreadMessageCount) name:@"setupUnreadMessageCount" object:nil];
-//    
-//    [self setupUnreadMessageCount];
-//    [self setupUntreatedApplyCount];
-    
-    //[ChatDemoHelper shareHelper].contactViewVC = _contactsVC;
-    //[ChatDemoHelper shareHelper].conversationListVC = _chatListVC;
-
 }
+
 #pragma mark -登陆失效,重新登陆
 
 -(void)showReloginAlert{

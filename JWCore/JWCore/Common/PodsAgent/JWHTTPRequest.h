@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, ARGS_TYPE) {
 
 + (void)post:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error;
 
-+ (void)post:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error inv:(UIView *)view;
++ (void)post:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error loading:(BOOL)loading;
 
 /**
  *  GET请求
@@ -49,7 +49,7 @@ typedef NS_ENUM(NSInteger, ARGS_TYPE) {
 
 + (void)get:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error;
 
-+ (void)get:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error inv:(UIView *)view;
++ (void)get:(NSString *)api args:(id)args target:(id)target succ:(HTTPRequestSuccessBlock)succ error:(HTTPRequestFailureBlock)error loading:(BOOL)loading;
 
 /**
  *  独立的post请求
