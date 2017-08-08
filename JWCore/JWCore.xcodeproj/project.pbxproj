@@ -36,13 +36,10 @@
 		046298C91CFC174A006050EB /* SysParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 046298C61CFC174A006050EB /* SysParams.m */; };
 		046298CA1CFC174A006050EB /* SysFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 046298C81CFC174A006050EB /* SysFunctions.m */; };
 		046298D61CFC2666006050EB /* NSObject+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 046298D51CFC2666006050EB /* NSObject+Extra.m */; };
-		046298D91CFC2C32006050EB /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 046298D81CFC2C32006050EB /* UserInfoManager.m */; };
-		046298DB1CFC2C9D006050EB /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 046298DA1CFC2C9D006050EB /* UserInfo.plist */; };
 		046298E41CFC384A006050EB /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 046298E31CFC384A006050EB /* UIView+Snapshot.m */; };
 		04629FA41CFEE3D4005F2A46 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04629FA31CFEE3D4005F2A46 /* BaseViewController.m */; };
 		048EE0541D8285D500AE18B5 /* JWRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 048EE0531D8285D500AE18B5 /* JWRegex.m */; };
 		048EE05B1D82880900AE18B5 /* UserLogonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048EE05A1D82880900AE18B5 /* UserLogonModel.m */; };
-		048EE05E1D82A27300AE18B5 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 048EE05D1D82A27300AE18B5 /* SvUDIDTools.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		048EE0611D82B8DC00AE18B5 /* JWImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 048EE0601D82B8DC00AE18B5 /* JWImagePicker.m */; };
 		04AAE7321CFD97230086CD98 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AAE7311CFD97230086CD98 /* libicucore.tbd */; };
 		04AAE7341CFD97420086CD98 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AAE7331CFD97420086CD98 /* libstdc++.tbd */; };
@@ -92,6 +89,10 @@
 		FEB14ABA1F399CAD00434021 /* JWHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */; };
 		FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABC1F399CC500434021 /* JWResponseModel.m */; };
 		FEB14AC01F399DFF00434021 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABF1F399DFF00434021 /* ViewModel.m */; };
+		FEB14AC41F39A1F200434021 /* UserLogonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AC21F39A1F200434021 /* UserLogonViewController.m */; };
+		FEB14AC51F39A1F200434021 /* UserLogonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB14AC31F39A1F200434021 /* UserLogonViewController.xib */; };
+		FEB14AC91F39A21100434021 /* UserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AC71F39A21100434021 /* UserRegisterViewController.m */; };
+		FEB14ACA1F39A21100434021 /* UserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB14AC81F39A21100434021 /* UserRegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,9 +164,6 @@
 		046298C81CFC174A006050EB /* SysFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysFunctions.m; sourceTree = "<group>"; };
 		046298D41CFC2666006050EB /* NSObject+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extra.h"; sourceTree = "<group>"; };
 		046298D51CFC2666006050EB /* NSObject+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extra.m"; sourceTree = "<group>"; };
-		046298D71CFC2C32006050EB /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
-		046298D81CFC2C32006050EB /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
-		046298DA1CFC2C9D006050EB /* UserInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		046298E21CFC384A006050EB /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
 		046298E31CFC384A006050EB /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
 		04629FA21CFEE3D4005F2A46 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -174,8 +172,6 @@
 		048EE0531D8285D500AE18B5 /* JWRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWRegex.m; sourceTree = "<group>"; };
 		048EE0591D82880900AE18B5 /* UserLogonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLogonModel.h; sourceTree = "<group>"; };
 		048EE05A1D82880900AE18B5 /* UserLogonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLogonModel.m; sourceTree = "<group>"; };
-		048EE05C1D82A27300AE18B5 /* SvUDIDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvUDIDTools.h; sourceTree = "<group>"; };
-		048EE05D1D82A27300AE18B5 /* SvUDIDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvUDIDTools.m; sourceTree = "<group>"; };
 		048EE05F1D82B8DC00AE18B5 /* JWImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWImagePicker.h; sourceTree = "<group>"; };
 		048EE0601D82B8DC00AE18B5 /* JWImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWImagePicker.m; sourceTree = "<group>"; };
 		04AAE7311CFD97230086CD98 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -255,6 +251,12 @@
 		FEB14ABC1F399CC500434021 /* JWResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWResponseModel.m; sourceTree = "<group>"; };
 		FEB14ABE1F399DFF00434021 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		FEB14ABF1F399DFF00434021 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		FEB14AC11F39A1F200434021 /* UserLogonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLogonViewController.h; sourceTree = "<group>"; };
+		FEB14AC21F39A1F200434021 /* UserLogonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLogonViewController.m; sourceTree = "<group>"; };
+		FEB14AC31F39A1F200434021 /* UserLogonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLogonViewController.xib; sourceTree = "<group>"; };
+		FEB14AC61F39A21100434021 /* UserRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRegisterViewController.h; sourceTree = "<group>"; };
+		FEB14AC71F39A21100434021 /* UserRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRegisterViewController.m; sourceTree = "<group>"; };
+		FEB14AC81F39A21100434021 /* UserRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserRegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,12 @@
 				04FEF9971D879327004C4520 /* WebViewController.h */,
 				04FEF9981D879327004C4520 /* WebViewController.m */,
 				04FEF9991D879327004C4520 /* WebViewController.xib */,
+				FEB14AC11F39A1F200434021 /* UserLogonViewController.h */,
+				FEB14AC21F39A1F200434021 /* UserLogonViewController.m */,
+				FEB14AC31F39A1F200434021 /* UserLogonViewController.xib */,
+				FEB14AC61F39A21100434021 /* UserRegisterViewController.h */,
+				FEB14AC71F39A21100434021 /* UserRegisterViewController.m */,
+				FEB14AC81F39A21100434021 /* UserRegisterViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -448,11 +456,6 @@
 				043A87AE1D868A120050FF2F /* JWDatePicker.m */,
 				043A87AF1D868A120050FF2F /* JWPickerView.h */,
 				043A87B01D868A120050FF2F /* JWPickerView.m */,
-				048EE05C1D82A27300AE18B5 /* SvUDIDTools.h */,
-				048EE05D1D82A27300AE18B5 /* SvUDIDTools.m */,
-				046298D71CFC2C32006050EB /* UserInfoManager.h */,
-				046298D81CFC2C32006050EB /* UserInfoManager.m */,
-				046298DA1CFC2C9D006050EB /* UserInfo.plist */,
 				04DCA6641CFEB61D0017EDBC /* JWImageLoadConnection.h */,
 				04DCA6651CFEB61D0017EDBC /* JWImageLoadConnection.m */,
 				044768E81D87DDCF00BCDA27 /* JWRequestExceptionAlertView.h */,
@@ -738,9 +741,10 @@
 				04E735651CFC0AC0007F51C4 /* Main.storyboard in Resources */,
 				FE4830DC1DACC4FD001ABB17 /* city.json in Resources */,
 				04FEF99B1D879327004C4520 /* WebViewController.xib in Resources */,
+				FEB14ACA1F39A21100434021 /* UserRegisterViewController.xib in Resources */,
 				044768EC1D87DDF700BCDA27 /* JWRequestExceptionAlertView.xib in Resources */,
+				FEB14AC51F39A1F200434021 /* UserLogonViewController.xib in Resources */,
 				044768F11D87F43600BCDA27 /* SPLaughView.xib in Resources */,
-				046298DB1CFC2C9D006050EB /* UserInfo.plist in Resources */,
 				FE577A681DBA0C83006E064A /* PushConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,9 +811,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048EE05E1D82A27300AE18B5 /* SvUDIDTools.m in Sources */,
 				043F261C1CFC1104000A294B /* UIDevice+Extra.m in Sources */,
 				043A87B51D868C570050FF2F /* JWSummitFile.m in Sources */,
+				FEB14AC91F39A21100434021 /* UserRegisterViewController.m in Sources */,
 				04629FA41CFEE3D4005F2A46 /* BaseViewController.m in Sources */,
 				04DCA6781CFEB7E10017EDBC /* MJCustomGifFooter.m in Sources */,
 				044768F01D87F43600BCDA27 /* SPLaughView.m in Sources */,
@@ -817,6 +821,7 @@
 				04DCA6771CFEB7E10017EDBC /* JWTableView.m in Sources */,
 				043F26211CFC1104000A294B /* UIWebView+ClearCache.m in Sources */,
 				048EE0541D8285D500AE18B5 /* JWRegex.m in Sources */,
+				FEB14AC41F39A1F200434021 /* UserLogonViewController.m in Sources */,
 				043F26191CFC1104000A294B /* NSDictionary+Extra.m in Sources */,
 				048EE05B1D82880900AE18B5 /* UserLogonModel.m in Sources */,
 				04FC0BA11D8FC39B00A8BC47 /* UITableView+DHSmartScreenshot.m in Sources */,
@@ -836,7 +841,6 @@
 				04E5D11A1D000B6C00DB97CB /* UITableView+EmptyData.m in Sources */,
 				043F26201CFC1104000A294B /* UIViewController+PushBackAnimation.m in Sources */,
 				046298CA1CFC174A006050EB /* SysFunctions.m in Sources */,
-				046298D91CFC2C32006050EB /* UserInfoManager.m in Sources */,
 				044768F41D87F7F400BCDA27 /* RootNavigationViewController.m in Sources */,
 				04E7355C1CFC0AC0007F51C4 /* main.m in Sources */,
 				043F261F1CFC1104000A294B /* UIView+Extra.m in Sources */,

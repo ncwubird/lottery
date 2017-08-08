@@ -7,6 +7,8 @@
 //
 
 #import "RootTabbarViewController.h"
+#import "UserLogonViewController.h"
+#import "UserRegisterViewController.h"
 
 #import "UINavigationController+NavigationBar.h"
 #import <ICTKit/UITabBarController+Helper.h>
@@ -52,18 +54,18 @@
 }
 
 -(void)addSubViewController{
-//    ConversationListController *messageVc = [[ConversationListController alloc]init];
-//    UINavigationController * messageNav=[[UINavigationController alloc] initWithRootViewController:messageVc];
-//    //[messageNav setToolbarHidden:YES animated:NO];
-//
-//    UINavigationController * patientNav=[[UINavigationController alloc] initWithRootViewController:[[PatientHomeViewController alloc]init]];
-//    
-//    UINavigationController * myNav=[[UINavigationController alloc] initWithRootViewController:[[MyHomeViewController alloc]init]];
-//    
-//    
-//    self.viewControllers=@[messageNav,patientNav,myNav];
-//    
-//    [self setSelectedViewController:messageNav];
+    UserLogonViewController *messageVc = [[UserLogonViewController alloc]init];
+    UINavigationController * messageNav=[[UINavigationController alloc] initWithRootViewController:messageVc];
+    //[messageNav setToolbarHidden:YES animated:NO];
+
+    UINavigationController * patientNav=[[UINavigationController alloc] initWithRootViewController:[[UserRegisterViewController alloc]init]];
+    
+    UINavigationController * myNav=[[UINavigationController alloc] initWithRootViewController:[[UserLogonViewController alloc]init]];
+    
+    
+    self.viewControllers=@[messageNav,patientNav,myNav];
+    
+    [self setSelectedViewController:messageNav];
 }
 
 -(void)setupTabBarItem{
