@@ -18,7 +18,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
-
     
     //56498746435613215845465496846546516465456
 
@@ -29,8 +28,6 @@
 
     
     //56498746435613215845465496846546516465456
-
-
 
 }
 
