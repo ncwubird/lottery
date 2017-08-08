@@ -5,13 +5,13 @@
 //  Created by JayWong on 16/5/30.
 //  Copyright © 2016年 WWJ. All rights reserved.
 //
-#ifdef __OBJC__
+
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-#define NSEaseLocalizedString(key, comment) [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"EaseUIResource" withExtension:@"bundle"]] localizedStringForKey:(key) value:@"" table:nil]
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
@@ -41,12 +41,9 @@
 
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
+#import "UIViewController+PushBackAnimation.h"
 
-#import <Hyphenate_CN/EMSDKFull.h>
-
-#import "EaseUI.h"
 
 #import "WebViewController.h"
 
 #endif /* PrefixHeader_pch */
-#endif

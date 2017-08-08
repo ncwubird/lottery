@@ -7,10 +7,9 @@
 //
 
 #import "BaseViewController.h"
-#import "NavSearchView.h"
 #import "UINavigationController+NavigationBar.h"
 
-@interface BaseViewController ()<NavSearchViewDelegate,UITextFieldDelegate>
+@interface BaseViewController ()<UITextFieldDelegate>
 
 @end
 
@@ -54,9 +53,7 @@
  */
 - (void)addNavBar:(NSString *)title leftBtn:(BAR_BTN_TYPE)leftBtnType rightBtn:(BAR_BTN_TYPE)rightBtnType{
     
-    if ([title isEqualToString:@"nav_search"]) {
-        [self addNavSearchView];
-    }else if ([title isEqualToString:@"nav_clear"]){
+   if ([title isEqualToString:@"nav_clear"]){
         [self.navigationController clearNavigationBar];
         [self.navigationController statusBarBackgroundWithColor:[UIColor clearColor]];
     }else{
@@ -215,11 +212,6 @@
     return [[UIBarButtonItem alloc]initWithCustomView:barButton];
 }
 
--(void)addNavSearchView{
-    NavSearchView * searchView=[[NavSearchView alloc] initWithFrame:CGRectMake(0, 0, KSCREEN_WIDTH, 44)];
-    [searchView setDelegate:self];
-    self.navigationItem.titleView=searchView;
-}
 
 #pragma mark -NavSearchViewDelegate
 

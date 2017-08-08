@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MyHomeModel.h"
-#import "MyAccountInfoModel.h"
+
 @interface UserLogonModel : NSObject
 @property (nonatomic, copy) NSString *user_id;
 
@@ -16,8 +15,7 @@
 @property (nonatomic, copy) NSDictionary *uinfo;
 
 @property (nonatomic, copy) NSString *url;
-@property (nonatomic, retain) MyHomeModel *homeModel;
-@property (nonatomic, retain) MyAccountInfoModel *accountModel;
+
 
 @end
 

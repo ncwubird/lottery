@@ -8,7 +8,6 @@
 
 #import "SysFunctions.h"
 #import <ICTKit/UITabBarController+Helper.h>
-#import "UserLogonViewController.h"
 @implementation SysFunctions
 
 /**
@@ -100,9 +99,9 @@
  *  登陆页
  */
 +(void)presentLogonViewController{
-    UserLogonViewController * logon=[[UserLogonViewController alloc] init];
-    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:logon];
-    [[SysFunctions rootNavController] presentModalViewController:nav];
+//    UserLogonViewController * logon=[[UserLogonViewController alloc] init];
+//    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:logon];
+//    [[SysFunctions rootNavController] presentModalViewController:nav];
 }
 
 /**
