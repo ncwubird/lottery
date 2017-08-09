@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="08P-4D-TgX" customClass="HomeHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3d-Cz-7Ir">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_prize" translatesAutoresizingMaskIntoConstraints="NO" id="JJY-VS-0JT">
+                            <rect key="frame" x="3" y="7" width="53" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="53" id="QdP-uC-D0f"/>
+                                <constraint firstAttribute="height" constant="18" id="sh4-ag-hlr"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="化进阶幻梦化进阶幻梦化进阶幻梦化进阶幻梦" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-Oj-2JR">
+                            <rect key="frame" x="59" y="8.5" width="296" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="kqe-Oj-2JR" secondAttribute="trailing" constant="20" id="8Ap-yx-Spd"/>
+                        <constraint firstItem="JJY-VS-0JT" firstAttribute="leading" secondItem="U3d-Cz-7Ir" secondAttribute="leading" constant="3" id="CxG-Ix-aoD"/>
+                        <constraint firstItem="kqe-Oj-2JR" firstAttribute="leading" secondItem="JJY-VS-0JT" secondAttribute="trailing" constant="3" id="Eze-Rv-q0E"/>
+                        <constraint firstAttribute="height" constant="50" id="hUd-ae-G0C"/>
+                        <constraint firstItem="JJY-VS-0JT" firstAttribute="top" secondItem="U3d-Cz-7Ir" secondAttribute="top" constant="7" id="i27-RU-JjK"/>
+                        <constraint firstItem="kqe-Oj-2JR" firstAttribute="centerY" secondItem="JJY-VS-0JT" secondAttribute="centerY" id="usE-b6-v03"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHI-EY-IHx">
+                    <rect key="frame" x="0.0" y="54" width="375" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="TT6-vG-r8b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EHI-EY-IHx" firstAttribute="leading" secondItem="08P-4D-TgX" secondAttribute="leading" id="ORp-WO-Tih"/>
+                <constraint firstAttribute="trailing" secondItem="U3d-Cz-7Ir" secondAttribute="trailing" id="Zhx-Fj-DD2"/>
+                <constraint firstItem="U3d-Cz-7Ir" firstAttribute="top" secondItem="08P-4D-TgX" secondAttribute="top" id="aot-jI-qYY"/>
+                <constraint firstItem="EHI-EY-IHx" firstAttribute="top" secondItem="U3d-Cz-7Ir" secondAttribute="bottom" constant="4" id="ayd-5O-GCA"/>
+                <constraint firstItem="U3d-Cz-7Ir" firstAttribute="leading" secondItem="08P-4D-TgX" secondAttribute="leading" id="h6N-tH-RR6"/>
+                <constraint firstAttribute="trailing" secondItem="EHI-EY-IHx" secondAttribute="trailing" id="pSV-c5-jfn"/>
+            </constraints>
+            <point key="canvasLocation" x="2.5" y="-2.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_prize" width="53" height="18"/>
+    </resources>
+</document>

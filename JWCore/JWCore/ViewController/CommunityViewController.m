@@ -30,9 +30,9 @@
     self.navigationItem.titleView = self.navView;
     
     self.announcementVC = [[CommunityAnnouncementViewController alloc]init];
-    [self addChildViewController:self.announcementVC];
-    [self.view addSubview:self.announcementVC.view];
-    [self.announcementVC.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    //[self addChildViewController:self.announcementVC];
+    //[self.view addSubview:self.announcementVC.view];
+    [self.announcementVC.view setFrame:CGRectMake(0, 0, KSCREEN_WIDTH, self.view.bounds.size.height)];
     
 
     self.hotTopicVC = [[CommunityHotTopicViewController alloc]init];
@@ -66,10 +66,14 @@
 
 
 - (void)replaceController:(UIViewController *)oldController newController:(UIViewController *)newController{
+    [self addChildViewController:newController];
     [self transitionFromViewController:oldController toViewController:newController duration:0.001 options:UIViewAnimationOptionTransitionCrossDissolve animations:nil completion:^(BOOL finished) {
-        [newController didMoveToParentViewController:self];
-    }];
-
+        if (finished) {
+            [newController didMoveToParentViewController:self];
+            //[oldController willMoveToParentViewController:nil];
+            //[oldController removeFromParentViewController];
+        }
+      }];
 }
 
 #pragma mark - getter

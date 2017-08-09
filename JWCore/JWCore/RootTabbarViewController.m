@@ -12,6 +12,7 @@
 #import "MyViewController.h"
 #import "FindViewController.h"
 #import "CommunityViewController.h"
+#import "HomeViewController.h"
 
 #import "UINavigationController+NavigationBar.h"
 #import <ICTKit/UITabBarController+Helper.h>
@@ -57,7 +58,7 @@
 }
 
 -(void)addSubViewController{
-    UserLogonViewController *messageVc = [[UserLogonViewController alloc]init];
+    HomeViewController *messageVc = [[HomeViewController alloc]init];
     UINavigationController * predictionNav=[[UINavigationController alloc] initWithRootViewController:messageVc];
     //[messageNav setToolbarHidden:YES animated:NO];
 

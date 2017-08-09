@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommunityAnnouncementCell" id="YgG-68-ACI" customClass="CommunityHotCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommunityAnnouncementCell" id="YgG-68-ACI" customClass="CommunityAnnouncementCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YgG-68-ACI" id="Zb7-X8-ToO">
@@ -73,9 +73,26 @@
                         <state key="normal" image="praise_no"/>
                         <state key="selected" image="praise_yes"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="管理员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-mv-DkU">
+                        <rect key="frame" x="86" y="18" width="45" height="14.5"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="3UB-r2-ucW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="cd4-mv-DkU" firstAttribute="leading" secondItem="eWu-IV-0kb" secondAttribute="trailing" constant="2" id="0HC-75-jBc"/>
                     <constraint firstAttribute="bottom" secondItem="ND8-sL-Ggp" secondAttribute="bottom" id="2H3-Ke-ZFl"/>
+                    <constraint firstItem="cd4-mv-DkU" firstAttribute="centerY" secondItem="eWu-IV-0kb" secondAttribute="centerY" id="3S3-5F-Blb"/>
                     <constraint firstItem="25y-p0-1Hu" firstAttribute="top" secondItem="Zb7-X8-ToO" secondAttribute="top" constant="13" id="6xX-xw-xF2"/>
                     <constraint firstItem="ND8-sL-Ggp" firstAttribute="top" secondItem="zzf-Ov-tqR" secondAttribute="bottom" constant="6" id="7Uc-ai-hNL"/>
                     <constraint firstItem="eWu-IV-0kb" firstAttribute="leading" secondItem="25y-p0-1Hu" secondAttribute="trailing" constant="5" id="965-Ve-Paw"/>
@@ -95,12 +112,13 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="detailLabel" destination="9bf-MW-u2M" id="Zog-vd-ZyC"/>
-                <outlet property="headImgView" destination="25y-p0-1Hu" id="gdM-Wz-hMt"/>
+                <outlet property="headImgView" destination="25y-p0-1Hu" id="VSl-N6-BCK"/>
                 <outlet property="namelabel" destination="eWu-IV-0kb" id="6E8-Cf-WcQ"/>
+                <outlet property="praiseButton" destination="cAz-6x-spF" id="x50-NH-t22"/>
                 <outlet property="praiseNumLabel" destination="zzf-Ov-tqR" id="Pk2-cH-7HN"/>
                 <outlet property="timeLabel" destination="VdA-DT-BD5" id="GQU-ie-eeE"/>
             </connections>
-            <point key="canvasLocation" x="-170" y="50"/>
+            <point key="canvasLocation" x="-251" y="48"/>
         </tableViewCell>
     </objects>
     <resources>

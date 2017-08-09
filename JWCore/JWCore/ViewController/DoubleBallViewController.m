@@ -1,33 +1,30 @@
 //
-//  CommunityAnnouncementViewController.m
+//  DoubleBallViewController.m
 //  JWCore
 //
 //  Created by 苟晓浪 on 2017/8/9.
 //  Copyright © 2017年 WWJ. All rights reserved.
 //
 
-#import "CommunityAnnouncementViewController.h"
-#import "CommunityAnnouncementCell.h"
+#import "DoubleBallViewController.h"
+#import "HomeCell.h"
 
-@interface CommunityAnnouncementViewController ()<UITableViewDelegate,UITableViewDataSource,MJRefreshManagerDelegate>
+@interface DoubleBallViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet JWTableView *listTable;
 
-
 @end
 
-@implementation CommunityAnnouncementViewController
+@implementation DoubleBallViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _listTable.delegate = self;
     _listTable.dataSource = self;
-    _listTable.rowHeight = 148;
-    [_listTable registerNib:[UINib nibWithNibName:@"CommunityAnnouncementCell" bundle:nil] forCellReuseIdentifier:@"CommunityAnnouncementCell"];
-    [[MJRefreshManager shareInstace] setDelegate:self];
-    [MJRefreshManager addRefreshingHeaderAndFooter:_listTable];
-
+    _listTable.rowHeight = 75;
+    [_listTable registerNib:[UINib nibWithNibName:@"HomeCell" bundle:nil] forCellReuseIdentifier:@"HomeCell"];
+    //[_listTable reloadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -37,6 +34,7 @@
         [SysFunctions showTabbar];
     }
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -56,34 +54,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 10;
     //return _listTable.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CommunityAnnouncementCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CommunityAnnouncementCell" forIndexPath:indexPath];
+    HomeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeCell" forIndexPath:indexPath];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-}
-
-#pragma mark - mjrefresh delegate
--(void)loadNewData
-{
-    _listTable.CURRENT_PAGE = 1;
-    [_listTable reloadData];
-    //[self requestInfoTask];
-    [_listTable endRefreshing];
-}
-
--(void)loadMoreData
-{
-    _listTable.CURRENT_PAGE ++;
-    //[self requestInfoTask];
 }
 
 @end

@@ -81,7 +81,7 @@
 +(void)hiddenTabbar{
     UIViewController * ctrl=[SysFunctions navigationRootViewController];
     if ([ctrl isKindOfClass:[UITabBarController class]]) {
-        [(UITabBarController *)ctrl setTabbarHidden:YES animated:YES];
+        [(UITabBarController *)ctrl setTabbarHidden:YES animated:NO];
     }
 }
 

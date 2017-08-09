@@ -29,7 +29,12 @@
 }
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    if (![[[self.navigationController viewControllers] objectAtIndex:0] isEqual:self]) {
+        [SysFunctions showTabbar];
+    }
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -49,7 +54,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 2;
     //return _listTable.dataArray.count;
 }
 

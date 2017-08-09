@@ -15,5 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *praiseNumLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomLabel;
-
+@property (weak, nonatomic) IBOutlet UIButton *praiseButton;
 @end

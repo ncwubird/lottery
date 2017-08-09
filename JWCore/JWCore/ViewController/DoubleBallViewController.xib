@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommunityAnnouncementViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoubleBallViewController">
             <connections>
-                <outlet property="listTable" destination="fLX-Wk-vnW" id="6jk-wb-qDn"/>
+                <outlet property="listTable" destination="f9U-Fd-Pfa" id="ufi-v0-BtP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,19 +20,18 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fLX-Wk-vnW" customClass="JWTableView">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-Fd-Pfa" customClass="JWTableView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fLX-Wk-vnW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6gM-t4-88a"/>
-                <constraint firstAttribute="bottom" secondItem="fLX-Wk-vnW" secondAttribute="bottom" id="AbV-x6-Hd4"/>
-                <constraint firstAttribute="trailing" secondItem="fLX-Wk-vnW" secondAttribute="trailing" id="LDA-Lf-sNe"/>
-                <constraint firstItem="fLX-Wk-vnW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QUU-TW-729"/>
+                <constraint firstItem="f9U-Fd-Pfa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Je-0k-D5u"/>
+                <constraint firstAttribute="bottom" secondItem="f9U-Fd-Pfa" secondAttribute="bottom" id="jfn-En-GnG"/>
+                <constraint firstAttribute="trailing" secondItem="f9U-Fd-Pfa" secondAttribute="trailing" id="uJb-iv-wBd"/>
+                <constraint firstItem="f9U-Fd-Pfa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v65-YJ-k9D"/>
             </constraints>
-            <point key="canvasLocation" x="-98" y="68"/>
         </view>
     </objects>
 </document>

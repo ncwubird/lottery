@@ -10,4 +10,12 @@
 
 @interface CommunityAnnouncementCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *headImgView;
+@property (weak, nonatomic) IBOutlet UILabel *namelabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (weak, nonatomic) IBOutlet UILabel *praiseNumLabel;
+@property (weak, nonatomic) IBOutlet UIButton *praiseButton;
+
+
 @end
