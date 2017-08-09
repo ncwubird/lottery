@@ -9,6 +9,9 @@
 #import "RootTabbarViewController.h"
 #import "UserLogonViewController.h"
 #import "UserRegisterViewController.h"
+#import "MyViewController.h"
+#import "FindViewController.h"
+#import "CommunityViewController.h"
 
 #import "UINavigationController+NavigationBar.h"
 #import <ICTKit/UITabBarController+Helper.h>
@@ -55,17 +58,18 @@
 
 -(void)addSubViewController{
     UserLogonViewController *messageVc = [[UserLogonViewController alloc]init];
-    UINavigationController * messageNav=[[UINavigationController alloc] initWithRootViewController:messageVc];
+    UINavigationController * predictionNav=[[UINavigationController alloc] initWithRootViewController:messageVc];
     //[messageNav setToolbarHidden:YES animated:NO];
 
-    UINavigationController * patientNav=[[UINavigationController alloc] initWithRootViewController:[[UserRegisterViewController alloc]init]];
+    UINavigationController * comnunityNav=[[UINavigationController alloc] initWithRootViewController:[[CommunityViewController alloc]init]];
+    UINavigationController * findNav=[[UINavigationController alloc] initWithRootViewController:[[FindViewController alloc]init]];
     
-    UINavigationController * myNav=[[UINavigationController alloc] initWithRootViewController:[[UserLogonViewController alloc]init]];
+    UINavigationController * myNav=[[UINavigationController alloc] initWithRootViewController:[[MyViewController alloc]init]];
     
     
-    self.viewControllers=@[messageNav,patientNav,myNav];
+    self.viewControllers=@[predictionNav,comnunityNav,findNav,myNav];
     
-    [self setSelectedViewController:messageNav];
+    [self setSelectedViewController:predictionNav];
 }
 
 -(void)setupTabBarItem{
@@ -73,14 +77,17 @@
     UITabBarItem *item0 = [tabBar.items objectAtIndex:0];
     UITabBarItem *item1 = [tabBar.items objectAtIndex:1];
     UITabBarItem *item2 = [tabBar.items objectAtIndex:2];
+    UITabBarItem *item3 = [tabBar.items objectAtIndex:3];
     
     item0.imageInsets=UIEdgeInsetsMake(-3, 0,3, 0);
     item1.imageInsets=UIEdgeInsetsMake(-3, 0,3, 0);
     item2.imageInsets=UIEdgeInsetsMake(-3, 0,3, 0);
+    item3.imageInsets=UIEdgeInsetsMake(-3, 0,3, 0);
     
-    item0.title=@"消息";
-    item1.title=@"患者";
-    item2.title=@"我的";
+    item0.title=@"预测";
+    item1.title=@"大厅";
+    item2.title=@"发现";
+    item3.title=@"我的";
     
     item0.selectedImage = [[UIImage imageNamed:@"tool_bar_1_2.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     item0.image = [[UIImage imageNamed:@"tool_bar_1_1.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -90,9 +97,11 @@
     
     item2.selectedImage = [[UIImage imageNamed:@"tool_bar_3_2.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     item2.image = [[UIImage imageNamed:@"tool_bar_3_1.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item3.selectedImage = [[UIImage imageNamed:@"tool_bar_4_2.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item3.image = [[UIImage imageNamed:@"tool_bar_4_1.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[@"#A0A0A0" hexColor], NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:12.0], NSFontAttributeName,nil] forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[@"#009BFF" hexColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:12.0], NSFontAttributeName,nil] forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[@"#6f6f6f" hexColor], NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:12.0], NSFontAttributeName,nil] forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[@"#ff2d2d" hexColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:12.0], NSFontAttributeName,nil] forState:UIControlStateSelected];
 }
 
 

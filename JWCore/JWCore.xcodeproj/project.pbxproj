@@ -85,6 +85,22 @@
 		FE577A7A1DBA0D72006E064A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE577A791DBA0D72006E064A /* libresolv.tbd */; };
 		FE5824DB1DB4B2F3008052C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE5824DA1DB4B2F3008052C9 /* Localizable.strings */; };
 		FE5824DE1DB4CF71008052C9 /* ClickImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5824DD1DB4CF71008052C9 /* ClickImage.m */; };
+		FE62EC2D1F3AA01D00252CAD /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC2B1F3AA01D00252CAD /* CommunityViewController.m */; };
+		FE62EC2E1F3AA01D00252CAD /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC2C1F3AA01D00252CAD /* CommunityViewController.xib */; };
+		FE62EC321F3AA04600252CAD /* CommunityTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC311F3AA04600252CAD /* CommunityTitleView.m */; };
+		FE62EC341F3AA05100252CAD /* CommunityTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC331F3AA05100252CAD /* CommunityTitleView.xib */; };
+		FE62EC391F3AA0EC00252CAD /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC371F3AA0EC00252CAD /* MyViewController.m */; };
+		FE62EC3A1F3AA0EC00252CAD /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC381F3AA0EC00252CAD /* MyViewController.xib */; };
+		FE62EC3F1F3AA98700252CAD /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC3D1F3AA98700252CAD /* FindViewController.m */; };
+		FE62EC401F3AA98700252CAD /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC3E1F3AA98700252CAD /* FindViewController.xib */; };
+		FE62EC441F3AAA6B00252CAD /* CommunityHotTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC421F3AAA6B00252CAD /* CommunityHotTopicViewController.m */; };
+		FE62EC451F3AAA6B00252CAD /* CommunityHotTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC431F3AAA6B00252CAD /* CommunityHotTopicViewController.xib */; };
+		FE62EC491F3AAA9000252CAD /* CommunityAnnouncementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC471F3AAA9000252CAD /* CommunityAnnouncementViewController.m */; };
+		FE62EC4A1F3AAA9000252CAD /* CommunityAnnouncementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC481F3AAA9000252CAD /* CommunityAnnouncementViewController.xib */; };
+		FE62EC4E1F3AAAB300252CAD /* CommunityHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC4C1F3AAAB300252CAD /* CommunityHotCell.m */; };
+		FE62EC4F1F3AAAB300252CAD /* CommunityHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC4D1F3AAAB300252CAD /* CommunityHotCell.xib */; };
+		FE62EC531F3AAAC900252CAD /* CommunityAnnouncementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC511F3AAAC900252CAD /* CommunityAnnouncementCell.m */; };
+		FE62EC541F3AAAC900252CAD /* CommunityAnnouncementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC521F3AAAC900252CAD /* CommunityAnnouncementCell.xib */; };
 		FE9D44991DB8B39B009EFDAA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FEB14ABA1F399CAD00434021 /* JWHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */; };
 		FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABC1F399CC500434021 /* JWResponseModel.m */; };
@@ -244,6 +260,30 @@
 		FE5824DA1DB4B2F3008052C9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Tool/Localizable.strings; sourceTree = "<group>"; };
 		FE5824DC1DB4CF71008052C9 /* ClickImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickImage.h; sourceTree = "<group>"; };
 		FE5824DD1DB4CF71008052C9 /* ClickImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickImage.m; sourceTree = "<group>"; };
+		FE62EC2A1F3AA01D00252CAD /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		FE62EC2B1F3AA01D00252CAD /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		FE62EC2C1F3AA01D00252CAD /* CommunityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityViewController.xib; sourceTree = "<group>"; };
+		FE62EC301F3AA04600252CAD /* CommunityTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityTitleView.h; sourceTree = "<group>"; };
+		FE62EC311F3AA04600252CAD /* CommunityTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityTitleView.m; sourceTree = "<group>"; };
+		FE62EC331F3AA05100252CAD /* CommunityTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityTitleView.xib; sourceTree = "<group>"; };
+		FE62EC361F3AA0EC00252CAD /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		FE62EC371F3AA0EC00252CAD /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		FE62EC381F3AA0EC00252CAD /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		FE62EC3C1F3AA98700252CAD /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		FE62EC3D1F3AA98700252CAD /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		FE62EC3E1F3AA98700252CAD /* FindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindViewController.xib; sourceTree = "<group>"; };
+		FE62EC411F3AAA6B00252CAD /* CommunityHotTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityHotTopicViewController.h; sourceTree = "<group>"; };
+		FE62EC421F3AAA6B00252CAD /* CommunityHotTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityHotTopicViewController.m; sourceTree = "<group>"; };
+		FE62EC431F3AAA6B00252CAD /* CommunityHotTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityHotTopicViewController.xib; sourceTree = "<group>"; };
+		FE62EC461F3AAA9000252CAD /* CommunityAnnouncementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityAnnouncementViewController.h; sourceTree = "<group>"; };
+		FE62EC471F3AAA9000252CAD /* CommunityAnnouncementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityAnnouncementViewController.m; sourceTree = "<group>"; };
+		FE62EC481F3AAA9000252CAD /* CommunityAnnouncementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityAnnouncementViewController.xib; sourceTree = "<group>"; };
+		FE62EC4B1F3AAAB300252CAD /* CommunityHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityHotCell.h; sourceTree = "<group>"; };
+		FE62EC4C1F3AAAB300252CAD /* CommunityHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityHotCell.m; sourceTree = "<group>"; };
+		FE62EC4D1F3AAAB300252CAD /* CommunityHotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityHotCell.xib; sourceTree = "<group>"; };
+		FE62EC501F3AAAC900252CAD /* CommunityAnnouncementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityAnnouncementCell.h; sourceTree = "<group>"; };
+		FE62EC511F3AAAC900252CAD /* CommunityAnnouncementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityAnnouncementCell.m; sourceTree = "<group>"; };
+		FE62EC521F3AAAC900252CAD /* CommunityAnnouncementCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityAnnouncementCell.xib; sourceTree = "<group>"; };
 		FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		FEB14AB81F399CAD00434021 /* JWHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWHTTPRequest.h; sourceTree = "<group>"; };
 		FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWHTTPRequest.m; sourceTree = "<group>"; };
@@ -303,6 +343,9 @@
 		0426A5DE1D795AF6000DBAF4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FE62EC3B1F3AA97700252CAD /* Find */,
+				FE62EC351F3AA0D100252CAD /* My */,
+				FE62EC291F3AA00400252CAD /* Community */,
 				04FEF9971D879327004C4520 /* WebViewController.h */,
 				04FEF9981D879327004C4520 /* WebViewController.m */,
 				04FEF9991D879327004C4520 /* WebViewController.xib */,
@@ -485,6 +528,7 @@
 		04979D841D83E3A40084F73B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE62EC2F1F3AA02600252CAD /* Community */,
 				044768ED1D87F43600BCDA27 /* SPLaughView.h */,
 				044768EE1D87F43600BCDA27 /* SPLaughView.m */,
 				044768EF1D87F43600BCDA27 /* SPLaughView.xib */,
@@ -533,12 +577,12 @@
 				FE577A7B1DBA0D80006E064A /* JWCore.entitlements */,
 				043F25FD1CFC1009000A294B /* Configure */,
 				0432C9331D7D54F200184E14 /* Tool */,
+				0426A5E81D795B3A000DBAF4 /* Vendor */,
 				043F25FB1CFC0FDB000A294B /* Common */,
 				043F26011CFC104A000A294B /* ViewModel */,
 				04979D841D83E3A40084F73B /* View */,
 				0426A5DF1D795B16000DBAF4 /* Model */,
 				0426A5DE1D795AF6000DBAF4 /* ViewController */,
-				0426A5E81D795B3A000DBAF4 /* Vendor */,
 				04629FA21CFEE3D4005F2A46 /* BaseViewController.h */,
 				04629FA31CFEE3D4005F2A46 /* BaseViewController.m */,
 				044768F21D87F7F400BCDA27 /* RootNavigationViewController.h */,
@@ -641,6 +685,58 @@
 			path = JPush;
 			sourceTree = "<group>";
 		};
+		FE62EC291F3AA00400252CAD /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				FE62EC2A1F3AA01D00252CAD /* CommunityViewController.h */,
+				FE62EC2B1F3AA01D00252CAD /* CommunityViewController.m */,
+				FE62EC2C1F3AA01D00252CAD /* CommunityViewController.xib */,
+				FE62EC411F3AAA6B00252CAD /* CommunityHotTopicViewController.h */,
+				FE62EC421F3AAA6B00252CAD /* CommunityHotTopicViewController.m */,
+				FE62EC431F3AAA6B00252CAD /* CommunityHotTopicViewController.xib */,
+				FE62EC461F3AAA9000252CAD /* CommunityAnnouncementViewController.h */,
+				FE62EC471F3AAA9000252CAD /* CommunityAnnouncementViewController.m */,
+				FE62EC481F3AAA9000252CAD /* CommunityAnnouncementViewController.xib */,
+			);
+			name = Community;
+			sourceTree = "<group>";
+		};
+		FE62EC2F1F3AA02600252CAD /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				FE62EC301F3AA04600252CAD /* CommunityTitleView.h */,
+				FE62EC311F3AA04600252CAD /* CommunityTitleView.m */,
+				FE62EC331F3AA05100252CAD /* CommunityTitleView.xib */,
+				FE62EC4B1F3AAAB300252CAD /* CommunityHotCell.h */,
+				FE62EC4C1F3AAAB300252CAD /* CommunityHotCell.m */,
+				FE62EC4D1F3AAAB300252CAD /* CommunityHotCell.xib */,
+				FE62EC501F3AAAC900252CAD /* CommunityAnnouncementCell.h */,
+				FE62EC511F3AAAC900252CAD /* CommunityAnnouncementCell.m */,
+				FE62EC521F3AAAC900252CAD /* CommunityAnnouncementCell.xib */,
+			);
+			name = Community;
+			sourceTree = "<group>";
+		};
+		FE62EC351F3AA0D100252CAD /* My */ = {
+			isa = PBXGroup;
+			children = (
+				FE62EC361F3AA0EC00252CAD /* MyViewController.h */,
+				FE62EC371F3AA0EC00252CAD /* MyViewController.m */,
+				FE62EC381F3AA0EC00252CAD /* MyViewController.xib */,
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
+		FE62EC3B1F3AA97700252CAD /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				FE62EC3C1F3AA98700252CAD /* FindViewController.h */,
+				FE62EC3D1F3AA98700252CAD /* FindViewController.m */,
+				FE62EC3E1F3AA98700252CAD /* FindViewController.xib */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -693,7 +789,7 @@
 				TargetAttributes = {
 					04E735561CFC0ABF007F51C4 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = R4J633936V;
+						DevelopmentTeam = VV4EY4UP8Q;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -735,14 +831,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE62EC3A1F3AA0EC00252CAD /* MyViewController.xib in Resources */,
+				FE62EC4F1F3AAAB300252CAD /* CommunityHotCell.xib in Resources */,
+				FE62EC541F3AAAC900252CAD /* CommunityAnnouncementCell.xib in Resources */,
 				04E7356A1CFC0AC0007F51C4 /* LaunchScreen.storyboard in Resources */,
+				FE62EC451F3AAA6B00252CAD /* CommunityHotTopicViewController.xib in Resources */,
 				04E735671CFC0AC0007F51C4 /* Assets.xcassets in Resources */,
 				FE5824DB1DB4B2F3008052C9 /* Localizable.strings in Resources */,
 				04E735651CFC0AC0007F51C4 /* Main.storyboard in Resources */,
+				FE62EC2E1F3AA01D00252CAD /* CommunityViewController.xib in Resources */,
 				FE4830DC1DACC4FD001ABB17 /* city.json in Resources */,
 				04FEF99B1D879327004C4520 /* WebViewController.xib in Resources */,
+				FE62EC341F3AA05100252CAD /* CommunityTitleView.xib in Resources */,
 				FEB14ACA1F39A21100434021 /* UserRegisterViewController.xib in Resources */,
+				FE62EC401F3AA98700252CAD /* FindViewController.xib in Resources */,
 				044768EC1D87DDF700BCDA27 /* JWRequestExceptionAlertView.xib in Resources */,
+				FE62EC4A1F3AAA9000252CAD /* CommunityAnnouncementViewController.xib in Resources */,
 				FEB14AC51F39A1F200434021 /* UserLogonViewController.xib in Resources */,
 				044768F11D87F43600BCDA27 /* SPLaughView.xib in Resources */,
 				FE577A681DBA0C83006E064A /* PushConfig.plist in Resources */,
@@ -814,6 +918,7 @@
 				043F261C1CFC1104000A294B /* UIDevice+Extra.m in Sources */,
 				043A87B51D868C570050FF2F /* JWSummitFile.m in Sources */,
 				FEB14AC91F39A21100434021 /* UserRegisterViewController.m in Sources */,
+				FE62EC4E1F3AAAB300252CAD /* CommunityHotCell.m in Sources */,
 				04629FA41CFEE3D4005F2A46 /* BaseViewController.m in Sources */,
 				04DCA6781CFEB7E10017EDBC /* MJCustomGifFooter.m in Sources */,
 				044768F01D87F43600BCDA27 /* SPLaughView.m in Sources */,
@@ -835,6 +940,9 @@
 				0457BB7B1CFD68FB00FEBBC5 /* SystemConfigure.m in Sources */,
 				04FEF99A1D879327004C4520 /* WebViewController.m in Sources */,
 				0457BB7E1CFD734C00FEBBC5 /* JWShare.m in Sources */,
+				FE62EC491F3AAA9000252CAD /* CommunityAnnouncementViewController.m in Sources */,
+				FE62EC2D1F3AA01D00252CAD /* CommunityViewController.m in Sources */,
+				FE62EC531F3AAAC900252CAD /* CommunityAnnouncementCell.m in Sources */,
 				043165641D80074B00373D7E /* UITableViewCell+Animation.m in Sources */,
 				044768EA1D87DDCF00BCDA27 /* JWRequestExceptionAlertView.m in Sources */,
 				046298C91CFC174A006050EB /* SysParams.m in Sources */,
@@ -848,15 +956,19 @@
 				04FC0B9F1D8FC39B00A8BC47 /* UIImage+DHImageAdditions.m in Sources */,
 				046298E41CFC384A006050EB /* UIView+Snapshot.m in Sources */,
 				0426A6131D796CEC000DBAF4 /* UINavigationController+NavigationBar.m in Sources */,
+				FE62EC441F3AAA6B00252CAD /* CommunityHotTopicViewController.m in Sources */,
 				04CCA4C51D7EB9450033730D /* UINavigationItem+Margin.m in Sources */,
 				043F261B1CFC1104000A294B /* NSString+Extra.m in Sources */,
 				0432C9451D7D550B00184E14 /* YHWebViewProgress.m in Sources */,
+				FE62EC321F3AA04600252CAD /* CommunityTitleView.m in Sources */,
 				046298D61CFC2666006050EB /* NSObject+Extra.m in Sources */,
 				043F261E1CFC1104000A294B /* UITextField+Extra.m in Sources */,
 				FEB14AC01F399DFF00434021 /* ViewModel.m in Sources */,
 				FE5824DE1DB4CF71008052C9 /* ClickImage.m in Sources */,
 				04FEF99E1D87A9D7004C4520 /* ImagePlayerView.m in Sources */,
+				FE62EC3F1F3AA98700252CAD /* FindViewController.m in Sources */,
 				043F26181CFC1104000A294B /* NSDate+Extra.m in Sources */,
+				FE62EC391F3AA0EC00252CAD /* MyViewController.m in Sources */,
 				043A87B11D868A120050FF2F /* JWDatePicker.m in Sources */,
 				043A87B21D868A120050FF2F /* JWPickerView.m in Sources */,
 				04DCA6631CFEB1DF0017EDBC /* JWProgressView.m in Sources */,
@@ -994,7 +1106,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JWCore/JWCore.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = R4J633936V;
+				DEVELOPMENT_TEAM = VV4EY4UP8Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1012,7 +1124,7 @@
 					"$(PROJECT_DIR)/JWCore/Tool/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/JWCore/Tool/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddknows.doctor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddknows.lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1024,7 +1136,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JWCore/JWCore.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = R4J633936V;
+				DEVELOPMENT_TEAM = VV4EY4UP8Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1042,7 +1154,7 @@
 					"$(PROJECT_DIR)/JWCore/Tool/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/JWCore/Tool/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddknows.doctor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddknows.lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
