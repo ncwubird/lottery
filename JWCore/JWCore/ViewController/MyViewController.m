@@ -8,7 +8,7 @@
 
 #import "MyViewController.h"
 
-@interface MyViewController ()
+@interface MyViewController ()<UIAlertViewDelegate>
 
 @end
 
@@ -53,5 +53,18 @@
 - (IBAction)contactUsAction:(id)sender {
 }
 - (IBAction)bindMobileAction:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"绑定手机号" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        UITextField *tf=[alertView textFieldAtIndex:0];
+        NSLog(@"%@",tf.text);
+    }
+   
 }
 @end

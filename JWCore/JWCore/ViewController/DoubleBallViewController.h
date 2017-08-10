@@ -10,4 +10,6 @@
 
 @interface DoubleBallViewController : BaseViewController
 
+@property (nonatomic,copy) NSString *titleStr;
+
 @end

@@ -112,6 +112,11 @@
 		FE62EC6C1F3B0EDA00252CAD /* HomeHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC6B1F3B0EDA00252CAD /* HomeHeadView.xib */; };
 		FE6F030C1F3BF4610083D364 /* HomeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6F030A1F3BF4610083D364 /* HomeCollectionCell.m */; };
 		FE6F030D1F3BF4610083D364 /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6F030B1F3BF4610083D364 /* HomeCollectionCell.xib */; };
+		FE75BE5D1F3C5A7F00CBE8D2 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE75BE5B1F3C5A7F00CBE8D2 /* HomeDetailViewController.m */; };
+		FE75BE5E1F3C5A7F00CBE8D2 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE75BE5C1F3C5A7F00CBE8D2 /* HomeDetailViewController.xib */; };
+		FE75BE611F3C5DFE00CBE8D2 /* HomeDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE75BE601F3C5DFE00CBE8D2 /* HomeDetailView.m */; };
+		FE75BE631F3C5E0800CBE8D2 /* HomeDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE75BE621F3C5E0800CBE8D2 /* HomeDetailView.xib */; };
+		FE75BE661F3C627400CBE8D2 /* JWItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE75BE651F3C627400CBE8D2 /* JWItemsView.m */; };
 		FE9D44991DB8B39B009EFDAA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FEB14ABA1F399CAD00434021 /* JWHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */; };
 		FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABC1F399CC500434021 /* JWResponseModel.m */; };
@@ -311,6 +316,14 @@
 		FE6F03091F3BF4610083D364 /* HomeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionCell.h; sourceTree = "<group>"; };
 		FE6F030A1F3BF4610083D364 /* HomeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionCell.m; sourceTree = "<group>"; };
 		FE6F030B1F3BF4610083D364 /* HomeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
+		FE75BE5A1F3C5A7F00CBE8D2 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		FE75BE5B1F3C5A7F00CBE8D2 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		FE75BE5C1F3C5A7F00CBE8D2 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
+		FE75BE5F1F3C5DFE00CBE8D2 /* HomeDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailView.h; sourceTree = "<group>"; };
+		FE75BE601F3C5DFE00CBE8D2 /* HomeDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailView.m; sourceTree = "<group>"; };
+		FE75BE621F3C5E0800CBE8D2 /* HomeDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailView.xib; sourceTree = "<group>"; };
+		FE75BE641F3C627400CBE8D2 /* JWItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWItemsView.h; sourceTree = "<group>"; };
+		FE75BE651F3C627400CBE8D2 /* JWItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWItemsView.m; sourceTree = "<group>"; };
 		FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		FEB14AB81F399CAD00434021 /* JWHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWHTTPRequest.h; sourceTree = "<group>"; };
 		FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWHTTPRequest.m; sourceTree = "<group>"; };
@@ -776,6 +789,9 @@
 				FE62EC611F3AE9E600252CAD /* DoubleBallViewController.h */,
 				FE62EC621F3AE9E600252CAD /* DoubleBallViewController.m */,
 				FE62EC631F3AE9E600252CAD /* DoubleBallViewController.xib */,
+				FE75BE5A1F3C5A7F00CBE8D2 /* HomeDetailViewController.h */,
+				FE75BE5B1F3C5A7F00CBE8D2 /* HomeDetailViewController.m */,
+				FE75BE5C1F3C5A7F00CBE8D2 /* HomeDetailViewController.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -792,6 +808,11 @@
 				FE6F03091F3BF4610083D364 /* HomeCollectionCell.h */,
 				FE6F030A1F3BF4610083D364 /* HomeCollectionCell.m */,
 				FE6F030B1F3BF4610083D364 /* HomeCollectionCell.xib */,
+				FE75BE5F1F3C5DFE00CBE8D2 /* HomeDetailView.h */,
+				FE75BE601F3C5DFE00CBE8D2 /* HomeDetailView.m */,
+				FE75BE621F3C5E0800CBE8D2 /* HomeDetailView.xib */,
+				FE75BE641F3C627400CBE8D2 /* JWItemsView.h */,
+				FE75BE651F3C627400CBE8D2 /* JWItemsView.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -892,6 +913,7 @@
 			files = (
 				FE62EC651F3AE9E600252CAD /* DoubleBallViewController.xib in Resources */,
 				FE62EC3A1F3AA0EC00252CAD /* MyViewController.xib in Resources */,
+				FE75BE631F3C5E0800CBE8D2 /* HomeDetailView.xib in Resources */,
 				FE62EC4F1F3AAAB300252CAD /* CommunityHotCell.xib in Resources */,
 				FE62EC541F3AAAC900252CAD /* CommunityAnnouncementCell.xib in Resources */,
 				04E7356A1CFC0AC0007F51C4 /* LaunchScreen.storyboard in Resources */,
@@ -912,6 +934,7 @@
 				044768EC1D87DDF700BCDA27 /* JWRequestExceptionAlertView.xib in Resources */,
 				FE62EC4A1F3AAA9000252CAD /* CommunityAnnouncementViewController.xib in Resources */,
 				FEB14AC51F39A1F200434021 /* UserLogonViewController.xib in Resources */,
+				FE75BE5E1F3C5A7F00CBE8D2 /* HomeDetailViewController.xib in Resources */,
 				044768F11D87F43600BCDA27 /* SPLaughView.xib in Resources */,
 				FE577A681DBA0C83006E064A /* PushConfig.plist in Resources */,
 				FE62EC6C1F3B0EDA00252CAD /* HomeHeadView.xib in Resources */,
@@ -982,6 +1005,7 @@
 			files = (
 				043F261C1CFC1104000A294B /* UIDevice+Extra.m in Sources */,
 				043A87B51D868C570050FF2F /* JWSummitFile.m in Sources */,
+				FE75BE611F3C5DFE00CBE8D2 /* HomeDetailView.m in Sources */,
 				FEB14AC91F39A21100434021 /* UserRegisterViewController.m in Sources */,
 				FE62EC4E1F3AAAB300252CAD /* CommunityHotCell.m in Sources */,
 				FE6F030C1F3BF4610083D364 /* HomeCollectionCell.m in Sources */,
@@ -992,6 +1016,7 @@
 				04DCA6771CFEB7E10017EDBC /* JWTableView.m in Sources */,
 				043F26211CFC1104000A294B /* UIWebView+ClearCache.m in Sources */,
 				048EE0541D8285D500AE18B5 /* JWRegex.m in Sources */,
+				FE75BE661F3C627400CBE8D2 /* JWItemsView.m in Sources */,
 				FEB14AC41F39A1F200434021 /* UserLogonViewController.m in Sources */,
 				043F26191CFC1104000A294B /* NSDictionary+Extra.m in Sources */,
 				048EE05B1D82880900AE18B5 /* UserLogonModel.m in Sources */,
@@ -1043,6 +1068,7 @@
 				043A87B21D868A120050FF2F /* JWPickerView.m in Sources */,
 				04DCA6631CFEB1DF0017EDBC /* JWProgressView.m in Sources */,
 				04DCA6791CFEB7E10017EDBC /* MJCustomGifHeader.m in Sources */,
+				FE75BE5D1F3C5A7F00CBE8D2 /* HomeDetailViewController.m in Sources */,
 				FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
