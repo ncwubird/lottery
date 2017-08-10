@@ -44,22 +44,92 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHI-EY-IHx">
                     <rect key="frame" x="0.0" y="54" width="375" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmo-dN-cpF">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="收费专家">
+                                <color key="titleColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="spelistChoose:" destination="08P-4D-TgX" eventType="touchUpInside" id="IWs-lC-F92"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxJ-0G-cC4">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="免费专家">
+                                <color key="titleColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="spelistChoose:" destination="08P-4D-TgX" eventType="touchUpInside" id="Xg7-zx-KpY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08g-x7-SAo">
+                            <rect key="frame" x="20" y="29" width="115" height="1"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1.5" id="01L-9g-FOG"/>
+                                <constraint firstAttribute="width" constant="115" id="gaj-Gn-sg3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="gxJ-0G-cC4" secondAttribute="bottom" id="5z7-2v-zy6"/>
+                        <constraint firstItem="nmo-dN-cpF" firstAttribute="leading" secondItem="EHI-EY-IHx" secondAttribute="leading" id="FEP-vh-A6Q"/>
+                        <constraint firstAttribute="bottom" secondItem="08g-x7-SAo" secondAttribute="bottom" id="HK5-av-IrA"/>
+                        <constraint firstItem="gxJ-0G-cC4" firstAttribute="top" secondItem="EHI-EY-IHx" secondAttribute="top" id="PVR-c6-Iaj"/>
+                        <constraint firstItem="gxJ-0G-cC4" firstAttribute="leading" secondItem="nmo-dN-cpF" secondAttribute="trailing" id="S9N-Uz-Jsv"/>
                         <constraint firstAttribute="height" constant="30" id="TT6-vG-r8b"/>
+                        <constraint firstAttribute="trailing" secondItem="gxJ-0G-cC4" secondAttribute="trailing" id="a9p-WG-AdB"/>
+                        <constraint firstAttribute="bottom" secondItem="nmo-dN-cpF" secondAttribute="bottom" id="j4B-wc-XMn"/>
+                        <constraint firstItem="08g-x7-SAo" firstAttribute="leading" secondItem="EHI-EY-IHx" secondAttribute="leading" constant="20" id="oEm-lr-tYP"/>
+                        <constraint firstItem="gxJ-0G-cC4" firstAttribute="width" secondItem="nmo-dN-cpF" secondAttribute="width" id="pt3-o6-Uge"/>
+                        <constraint firstItem="nmo-dN-cpF" firstAttribute="top" secondItem="EHI-EY-IHx" secondAttribute="top" id="r63-uc-zsN"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NUU-OF-J17">
+                    <rect key="frame" x="0.0" y="85" width="375" height="575"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="2" id="aHw-sB-Kpp">
+                        <size key="itemSize" width="71" height="23"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="NUU-OF-J17" firstAttribute="top" secondItem="EHI-EY-IHx" secondAttribute="bottom" constant="1" id="Ei4-JO-gUr"/>
+                <constraint firstAttribute="trailing" secondItem="NUU-OF-J17" secondAttribute="trailing" id="I65-04-5Pv"/>
                 <constraint firstItem="EHI-EY-IHx" firstAttribute="leading" secondItem="08P-4D-TgX" secondAttribute="leading" id="ORp-WO-Tih"/>
+                <constraint firstItem="NUU-OF-J17" firstAttribute="leading" secondItem="08P-4D-TgX" secondAttribute="leading" id="PfJ-yq-gJR"/>
                 <constraint firstAttribute="trailing" secondItem="U3d-Cz-7Ir" secondAttribute="trailing" id="Zhx-Fj-DD2"/>
                 <constraint firstItem="U3d-Cz-7Ir" firstAttribute="top" secondItem="08P-4D-TgX" secondAttribute="top" id="aot-jI-qYY"/>
                 <constraint firstItem="EHI-EY-IHx" firstAttribute="top" secondItem="U3d-Cz-7Ir" secondAttribute="bottom" constant="4" id="ayd-5O-GCA"/>
+                <constraint firstAttribute="bottom" secondItem="NUU-OF-J17" secondAttribute="bottom" constant="7" id="bdB-WX-m43"/>
                 <constraint firstItem="U3d-Cz-7Ir" firstAttribute="leading" secondItem="08P-4D-TgX" secondAttribute="leading" id="h6N-tH-RR6"/>
                 <constraint firstAttribute="trailing" secondItem="EHI-EY-IHx" secondAttribute="trailing" id="pSV-c5-jfn"/>
             </constraints>
-            <point key="canvasLocation" x="2.5" y="-2.5"/>
+            <connections>
+                <outlet property="collect" destination="NUU-OF-J17" id="YrH-J6-WnA"/>
+                <outlet property="freeButton" destination="gxJ-0G-cC4" id="Go1-IS-9s3"/>
+                <outlet property="leadingConstraint" destination="oEm-lr-tYP" id="yue-1K-wwe"/>
+                <outlet property="payButton" destination="nmo-dN-cpF" id="P5R-0D-RfS"/>
+            </connections>
+            <point key="canvasLocation" x="-457" y="-275"/>
         </view>
     </objects>
     <resources>

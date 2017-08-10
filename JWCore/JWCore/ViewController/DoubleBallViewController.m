@@ -8,11 +8,12 @@
 
 #import "DoubleBallViewController.h"
 #import "HomeCell.h"
+#import "HomeHeadView.h"
 
-@interface DoubleBallViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface DoubleBallViewController ()<UITableViewDelegate,UITableViewDataSource,HomeHeadViewDelegate>
 
 @property (weak, nonatomic) IBOutlet JWTableView *listTable;
-
+@property (nonatomic,retain) HomeHeadView *headView;
 @end
 
 @implementation DoubleBallViewController
@@ -24,6 +25,8 @@
     _listTable.dataSource = self;
     _listTable.rowHeight = 75;
     [_listTable registerNib:[UINib nibWithNibName:@"HomeCell" bundle:nil] forCellReuseIdentifier:@"HomeCell"];
+    _listTable.tableHeaderView = self.headView;
+    [_headView setConfig];
     //[_listTable reloadData];
 }
 
@@ -69,4 +72,21 @@
 {
 }
 
+
+#pragma mark - getter
+ -(HomeHeadView *)headView
+{
+    if (!_headView) {
+        _headView = [[HomeHeadView alloc]initWithFrame:CGRectMake(0, 0, KSCREEN_WIDTH, 164)];
+        _headView.delegate = self;
+    }
+    return _headView;
+}
+#pragma mark - HomeHeadViewDelegate
+- (void)refreshHeadViewHeightWithHeight:(CGFloat)height
+{
+    [_headView setFrame:CGRectMake(0, 0, KSCREEN_WIDTH, height)];
+    self.listTable.tableHeaderView = _headView;
+    [self.listTable reloadData];
+}
 @end

@@ -110,6 +110,8 @@
 		FE62EC671F3B0B8F00252CAD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC661F3B0B8F00252CAD /* Default-568h@2x.png */; };
 		FE62EC6A1F3B0E9100252CAD /* HomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62EC691F3B0E9100252CAD /* HomeHeadView.m */; };
 		FE62EC6C1F3B0EDA00252CAD /* HomeHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62EC6B1F3B0EDA00252CAD /* HomeHeadView.xib */; };
+		FE6F030C1F3BF4610083D364 /* HomeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6F030A1F3BF4610083D364 /* HomeCollectionCell.m */; };
+		FE6F030D1F3BF4610083D364 /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6F030B1F3BF4610083D364 /* HomeCollectionCell.xib */; };
 		FE9D44991DB8B39B009EFDAA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FEB14ABA1F399CAD00434021 /* JWHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */; };
 		FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABC1F399CC500434021 /* JWResponseModel.m */; };
@@ -306,6 +308,9 @@
 		FE62EC681F3B0E9100252CAD /* HomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeadView.h; sourceTree = "<group>"; };
 		FE62EC691F3B0E9100252CAD /* HomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeadView.m; sourceTree = "<group>"; };
 		FE62EC6B1F3B0EDA00252CAD /* HomeHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeadView.xib; sourceTree = "<group>"; };
+		FE6F03091F3BF4610083D364 /* HomeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionCell.h; sourceTree = "<group>"; };
+		FE6F030A1F3BF4610083D364 /* HomeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionCell.m; sourceTree = "<group>"; };
+		FE6F030B1F3BF4610083D364 /* HomeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
 		FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		FEB14AB81F399CAD00434021 /* JWHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWHTTPRequest.h; sourceTree = "<group>"; };
 		FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWHTTPRequest.m; sourceTree = "<group>"; };
@@ -784,6 +789,9 @@
 				FE62EC681F3B0E9100252CAD /* HomeHeadView.h */,
 				FE62EC691F3B0E9100252CAD /* HomeHeadView.m */,
 				FE62EC6B1F3B0EDA00252CAD /* HomeHeadView.xib */,
+				FE6F03091F3BF4610083D364 /* HomeCollectionCell.h */,
+				FE6F030A1F3BF4610083D364 /* HomeCollectionCell.m */,
+				FE6F030B1F3BF4610083D364 /* HomeCollectionCell.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -898,6 +906,7 @@
 				04FEF99B1D879327004C4520 /* WebViewController.xib in Resources */,
 				FE62EC341F3AA05100252CAD /* CommunityTitleView.xib in Resources */,
 				FEB14ACA1F39A21100434021 /* UserRegisterViewController.xib in Resources */,
+				FE6F030D1F3BF4610083D364 /* HomeCollectionCell.xib in Resources */,
 				FE62EC401F3AA98700252CAD /* FindViewController.xib in Resources */,
 				FE62EC671F3B0B8F00252CAD /* Default-568h@2x.png in Resources */,
 				044768EC1D87DDF700BCDA27 /* JWRequestExceptionAlertView.xib in Resources */,
@@ -975,6 +984,7 @@
 				043A87B51D868C570050FF2F /* JWSummitFile.m in Sources */,
 				FEB14AC91F39A21100434021 /* UserRegisterViewController.m in Sources */,
 				FE62EC4E1F3AAAB300252CAD /* CommunityHotCell.m in Sources */,
+				FE6F030C1F3BF4610083D364 /* HomeCollectionCell.m in Sources */,
 				04629FA41CFEE3D4005F2A46 /* BaseViewController.m in Sources */,
 				04DCA6781CFEB7E10017EDBC /* MJCustomGifFooter.m in Sources */,
 				044768F01D87F43600BCDA27 /* SPLaughView.m in Sources */,
