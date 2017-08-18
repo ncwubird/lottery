@@ -72,6 +72,9 @@
 		04FEF99E1D87A9D7004C4520 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEF99D1D87A9D7004C4520 /* ImagePlayerView.m */; };
 		A9938FE60C91147F6E2BCE4C /* libPods-JWCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F97D2E6BCEE5D7ACF2B60 /* libPods-JWCore.a */; };
 		FE4830DC1DACC4FD001ABB17 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = FE4830DB1DACC4FD001ABB17 /* city.json */; };
+		FE4E98051F46D6B200E5C08D /* HomeVisitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E98041F46D6B200E5C08D /* HomeVisitModel.m */; };
+		FE4E980B1F46DEC900E5C08D /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E98081F46DEC900E5C08D /* HTTPRequest.m */; };
+		FE4E980C1F46DEC900E5C08D /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E980A1F46DEC900E5C08D /* ViewModel.m */; };
 		FE577A671DBA0C83006E064A /* libPushSDK-1.8.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE577A651DBA0C83006E064A /* libPushSDK-1.8.8.a */; };
 		FE577A681DBA0C83006E064A /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE577A661DBA0C83006E064A /* PushConfig.plist */; };
 		FE577A6A1DBA0D00006E064A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE577A691DBA0D00006E064A /* CFNetwork.framework */; };
@@ -120,7 +123,6 @@
 		FE9D44991DB8B39B009EFDAA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9D44981DB8B39B009EFDAA /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FEB14ABA1F399CAD00434021 /* JWHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */; };
 		FEB14ABD1F399CC500434021 /* JWResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABC1F399CC500434021 /* JWResponseModel.m */; };
-		FEB14AC01F399DFF00434021 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14ABF1F399DFF00434021 /* ViewModel.m */; };
 		FEB14AC41F39A1F200434021 /* UserLogonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AC21F39A1F200434021 /* UserLogonViewController.m */; };
 		FEB14AC51F39A1F200434021 /* UserLogonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB14AC31F39A1F200434021 /* UserLogonViewController.xib */; };
 		FEB14AC91F39A21100434021 /* UserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB14AC71F39A21100434021 /* UserRegisterViewController.m */; };
@@ -260,6 +262,12 @@
 		544F97D2E6BCEE5D7ACF2B60 /* libPods-JWCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D4D72B926254A6A0B17F35 /* Pods-JWCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWCore/Pods-JWCore.release.xcconfig"; sourceTree = "<group>"; };
 		FE4830DB1DACC4FD001ABB17 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		FE4E98031F46D6B200E5C08D /* HomeVisitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVisitModel.h; sourceTree = "<group>"; };
+		FE4E98041F46D6B200E5C08D /* HomeVisitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVisitModel.m; sourceTree = "<group>"; };
+		FE4E98071F46DEC900E5C08D /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		FE4E98081F46DEC900E5C08D /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		FE4E98091F46DEC900E5C08D /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		FE4E980A1F46DEC900E5C08D /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		FE577A641DBA0C83006E064A /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
 		FE577A651DBA0C83006E064A /* libPushSDK-1.8.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.8.a"; sourceTree = "<group>"; };
 		FE577A661DBA0C83006E064A /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
@@ -329,8 +337,6 @@
 		FEB14AB91F399CAD00434021 /* JWHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWHTTPRequest.m; sourceTree = "<group>"; };
 		FEB14ABB1F399CC500434021 /* JWResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWResponseModel.h; sourceTree = "<group>"; };
 		FEB14ABC1F399CC500434021 /* JWResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWResponseModel.m; sourceTree = "<group>"; };
-		FEB14ABE1F399DFF00434021 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
-		FEB14ABF1F399DFF00434021 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		FEB14AC11F39A1F200434021 /* UserLogonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLogonViewController.h; sourceTree = "<group>"; };
 		FEB14AC21F39A1F200434021 /* UserLogonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLogonViewController.m; sourceTree = "<group>"; };
 		FEB14AC31F39A1F200434021 /* UserLogonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLogonViewController.xib; sourceTree = "<group>"; };
@@ -403,6 +409,7 @@
 		0426A5DF1D795B16000DBAF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE4E98061F46D6BD00E5C08D /* Home */,
 				048EE0581D8287D400AE18B5 /* user */,
 			);
 			path = Model;
@@ -472,8 +479,10 @@
 				0432C9111D7D4DEB00184E14 /* RequestAddress.h */,
 				FEB14ABB1F399CC500434021 /* JWResponseModel.h */,
 				FEB14ABC1F399CC500434021 /* JWResponseModel.m */,
-				FEB14ABE1F399DFF00434021 /* ViewModel.h */,
-				FEB14ABF1F399DFF00434021 /* ViewModel.m */,
+				FE4E98071F46DEC900E5C08D /* HTTPRequest.h */,
+				FE4E98081F46DEC900E5C08D /* HTTPRequest.m */,
+				FE4E98091F46DEC900E5C08D /* ViewModel.h */,
+				FE4E980A1F46DEC900E5C08D /* ViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -716,6 +725,15 @@
 				A7D4D72B926254A6A0B17F35 /* Pods-JWCore.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE4E98061F46D6BD00E5C08D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E98031F46D6B200E5C08D /* HomeVisitModel.h */,
+				FE4E98041F46D6B200E5C08D /* HomeVisitModel.m */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		FE577A631DBA0C83006E064A /* JPush */ = {
@@ -1018,6 +1036,8 @@
 				048EE0541D8285D500AE18B5 /* JWRegex.m in Sources */,
 				FE75BE661F3C627400CBE8D2 /* JWItemsView.m in Sources */,
 				FEB14AC41F39A1F200434021 /* UserLogonViewController.m in Sources */,
+				FE4E980C1F46DEC900E5C08D /* ViewModel.m in Sources */,
+				FE4E98051F46D6B200E5C08D /* HomeVisitModel.m in Sources */,
 				043F26191CFC1104000A294B /* NSDictionary+Extra.m in Sources */,
 				048EE05B1D82880900AE18B5 /* UserLogonModel.m in Sources */,
 				04FC0BA11D8FC39B00A8BC47 /* UITableView+DHSmartScreenshot.m in Sources */,
@@ -1031,6 +1051,7 @@
 				04FC0BA01D8FC39B00A8BC47 /* UIScrollView+DHSmartScreenshot.m in Sources */,
 				0457BB7B1CFD68FB00FEBBC5 /* SystemConfigure.m in Sources */,
 				FE62EC591F3AE10F00252CAD /* HomeViewController.m in Sources */,
+				FE4E980B1F46DEC900E5C08D /* HTTPRequest.m in Sources */,
 				04FEF99A1D879327004C4520 /* WebViewController.m in Sources */,
 				0457BB7E1CFD734C00FEBBC5 /* JWShare.m in Sources */,
 				FE62EC491F3AAA9000252CAD /* CommunityAnnouncementViewController.m in Sources */,
@@ -1058,7 +1079,6 @@
 				FE62EC321F3AA04600252CAD /* CommunityTitleView.m in Sources */,
 				046298D61CFC2666006050EB /* NSObject+Extra.m in Sources */,
 				043F261E1CFC1104000A294B /* UITextField+Extra.m in Sources */,
-				FEB14AC01F399DFF00434021 /* ViewModel.m in Sources */,
 				FE5824DE1DB4CF71008052C9 /* ClickImage.m in Sources */,
 				04FEF99E1D87A9D7004C4520 /* ImagePlayerView.m in Sources */,
 				FE62EC3F1F3AA98700252CAD /* FindViewController.m in Sources */,

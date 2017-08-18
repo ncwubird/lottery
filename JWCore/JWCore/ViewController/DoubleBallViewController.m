@@ -29,6 +29,7 @@
     _listTable.tableHeaderView = self.headView;
     [_headView setConfig];
     //[_listTable reloadData];
+    [self getHospitalRequest];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -85,4 +86,23 @@
     self.listTable.tableHeaderView = _headView;
     [self.listTable reloadData];
 }
+
+
+#pragma mark -request
+-(void)getHospitalRequest
+{
+    HTTPRequest * viewModel=[HTTPRequest new];
+    [viewModel setBlockWithReturnBlock:^(id returnValue) {
+        JWResponseModel * responseModel=[JWResponseModel mj_objectWithKeyValues:returnValue];
+        if ([responseModel isCorrectResponse]) {
+            
+            //[_listTable hiddenRefreshingFooterOrNot:self.findModel.page totalPage:self.findModel.page_count];
+                
+                }
+    } WithFailureBlock:^(id error){
+        [_listTable endRefreshing];
+    }];
+   // [viewModel getMyHospitalWithPage:[NSString stringWithFormat:@"%ld",(long)_hospitalTable.CURRENT_PAGE]];
+}
+
 @end
