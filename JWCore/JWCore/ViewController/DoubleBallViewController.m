@@ -28,7 +28,6 @@
     [_listTable registerNib:[UINib nibWithNibName:@"HomeCell" bundle:nil] forCellReuseIdentifier:@"HomeCell"];
     _listTable.tableHeaderView = self.headView;
     [_headView setConfig];
-    //[_listTable reloadData];
     [self getHospitalRequest];
 }
 
@@ -94,13 +93,14 @@
     HTTPRequest * viewModel=[HTTPRequest new];
     [viewModel setBlockWithReturnBlock:^(id returnValue) {
         JWResponseModel * responseModel=[JWResponseModel mj_objectWithKeyValues:returnValue];
+         //[_listTable endRefreshing];
         if ([responseModel isCorrectResponse]) {
             
             //[_listTable hiddenRefreshingFooterOrNot:self.findModel.page totalPage:self.findModel.page_count];
                 
                 }
     } WithFailureBlock:^(id error){
-        [_listTable endRefreshing];
+        //[_listTable endRefreshing];
     }];
    // [viewModel getMyHospitalWithPage:[NSString stringWithFormat:@"%ld",(long)_hospitalTable.CURRENT_PAGE]];
 }

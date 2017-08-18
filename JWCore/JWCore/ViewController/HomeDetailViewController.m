@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self addNavBar:[NSString stringWithFormat:@"%@-大师预测排行榜",self.titleStr] leftBtn:BAR_BTN_BACK_WHITE rightBtn:BAR_BTN_NONE];
+    [self addNavBar:[NSString stringWithFormat:@"%@-大师预测排行榜",self.titleStr] leftBtn:BAR_BTN_BACK rightBtn:BAR_BTN_NONE];
     [_mainScrollv addSubview:self.detailView];
     _mainScrollv.contentSize = CGSizeMake(KSCREEN_WIDTH, _detailView.frame.size.height+100);
     _detailView.itemView.cliclBlock = ^(NSString *type) {
